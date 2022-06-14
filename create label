@@ -1,0 +1,15 @@
+"""
+from tkinter import *
+# Always start with a root widget
+root = Tk()
+
+# Creating things in TKinter is a two step process, first create the widget, then put it on screen
+
+# Creating a Label Widget
+myLabel = Label(root, text="Hello World!")
+# Shoving it onto the screen - pack basically creates a window that fits around the text. Text stays where it is. 
+myLabel.pack()
+# constantly loops the object in order to detect the cursor in relation to the object
+root.mainloop()
+
+"""

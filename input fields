@@ -1,0 +1,95 @@
+# -----Creating Input Fields ------
+
+from tkinter import *
+# root widget
+root = Tk()
+# create entry (input) Widget. You can change width of field with 'width'. Can also change colours with fg and bg. Can also change border width
+e 
+# -----Creating Input Fields ------
+
+from tkinter import *
+# root widget
+root = Tk()
+# create entry (input) Widget. You can change width of field with 'width'. Can also change colours with fg and bg. Can also change border width
+e = Entry(root, width=50, bg="blue", fg="white", borderwidth=5)
+e.pack()
+
+# e.get collects what you type in, this case text output = text entered in field when you click button. Can also cocatenate, e.g  
+#def myClick():
+#  myLabel = Label(root, text= "Hello " + e.get())
+#  myLabel.pack()
+
+# tidy above up by creating 'hello' variable and calling within myLabel 
+def myClick():
+  hello = "Hello " + e.get()
+  myLabel = Label(root, text=hello)
+  myLabel.pack()
+    
+# command= calls funtion myClick. 
+myButton = Button(root, text="Enter your name", command=myClick)
+myButton.pack()
+
+root.mainloop()
+
+"""
+
+# put default text within field
+
+from tkinter import *
+# root widget
+root = Tk()
+
+e = Entry(root, width=50)
+e.pack()
+
+# default text. 0 is index (there is only one box)
+e.insert(0, "Enter Your Name: ")
+
+
+
+= Entry(root, width=50, bg="blue", fg="white", borderwidth=5)
+e.pack()
+
+# e.get collects what you type in, this case text output = text entered in field when you click button. Can also cocatenate, e.g  
+#def myClick():
+#  myLabel = Label(root, text= "Hello " + e.get())
+#  myLabel.pack()
+
+# tidy above up by creating 'hello' variable and calling within myLabel 
+def myClick():
+  hello = "Hello " + e.get()
+  myLabel = Label(root, text=hello)
+  myLabel.pack()
+  
+# command= calls funtion myClick. 
+myButton = Button(root, text="Enter your name", command=myClick)
+myButton.pack()
+
+root.mainloop()
+
+"""
+
+# put default text within field
+
+from tkinter import *
+# root widget
+root = Tk()
+
+e = Entry(root, width=50)
+e.pack()
+
+# default text. 0 is index (there is only one box)
+e.insert(0, "Enter Your Name: ")
+# you have to type over the default text, otherwise e.get collects inserted default text as well as typed in text. 
+
+def myClick():
+  hello = "Hello " + e.get()
+  myLabel = Label(root, text=hello)
+  myLabel.pack()
+  
+# command= calls funtion myClick. 
+myButton = Button(root, text="Enter your name", command=myClick)
+myButton.pack()
+
+root.mainloop()
+

@@ -1,0 +1,161 @@
+# -------------Creating Buttons--------------
+"""
+#create button without function attached
+from tkinter import *
+# root widget
+root = Tk()
+#
+myButton = Button(root, text="Click Me!")
+myButton.pack()
+
+# ending code for all code above in this lesson
+root.mainloop()
+"""
+"""
+# create button disabled
+
+from tkinter import *
+# root widget
+root = Tk()
+# disable button - greyed out
+myButton = Button(root, text="Click Me!", state=DISABLED)
+myButton.pack()
+
+root.mainloop()
+
+"""
+"""
+
+#change size of button
+
+from tkinter import *
+# root widget
+root = Tk()
+# padx changes width (x axis) of button, padx=50 button wider. pady changes height (y axis) of button, pady=50 button taller.
+myButton = Button(root, text="Click Me!", padx=50, pady=50)
+myButton.pack()
+
+root.mainloop()
+
+"""
+"""
+
+# ---------Add Function to Buttons--------------
+
+from tkinter import *
+# root widget
+root = Tk()
+
+# myClick adds function to button
+def myClick():
+  myLabel = Label(root, text="Look! I clicked a button!")
+  myLabel.pack()
+
+# command= calls funtion myClick. n.b.  we dont put brackets after fnction here, unusual
+myButton = Button(root, text="Click Me!", command=myClick)
+myButton.pack()
+
+root.mainloop()
+
+"""
+"""
+# change colour of button
+
+from tkinter import *
+
+# root widget
+root = Tk()
+
+def myCl
+# -------------Creating Buttons--------------
+"""
+#create button without function attached
+from tkinter import *
+# root widget
+root = Tk()
+#
+myButton = Button(root, text="Click Me!")
+myButton.pack()
+
+# ending code for all code above in this lesson
+root.mainloop()
+"""
+"""
+# create button disabled
+
+from tkinter import *
+# root widget
+root = Tk()
+# disable button - greyed out
+myButton = Button(root, text="Click Me!", state=DISABLED)
+myButton.pack()
+
+root.mainloop()
+
+"""
+"""
+
+#change size of button
+
+from tkinter import *
+# root widget
+root = Tk()
+# padx changes width (x axis) of button, padx=50 button wider. pady changes height (y axis) of button, pady=50 button taller.
+myButton = Button(root, text="Click Me!", padx=50, pady=50)
+myButton.pack()
+
+root.mainloop()
+
+"""
+"""
+
+# ---------Add Function to Buttons--------------
+
+from tkinter import *
+# root widget
+root = Tk()
+
+# myClick adds function to button
+def myClick():
+  myLabel = Label(root, text="Look! I clicked a button!")
+  myLabel.pack()
+  
+# command= calls funtion myClick. n.b.  we dont put brackets after fnction here, unusual
+myButton = Button(root, text="Click Me!", command=myClick)
+myButton.pack()
+
+root.mainloop()
+
+"""
+"""
+# change colour of button
+
+from tkinter import *
+
+# root widget
+root = Tk()
+
+def myClick():
+  myLabel = Label(root, text="Look! I clicked a button!")
+  myLabel.pack()
+  
+# fg = foreground (text) colour, bg = background colour -seems to work once you have clicked it. Also accepts hex colour codes, e.g. #ffffff for white
+
+myButton = Button(root, text="Click Me!", command=myClick, fg="blue", bg="#ffffff")
+myButton.pack()
+
+root.mainloop()
+
+"""
+ick():
+  myLabel = Label(root, text="Look! I clicked a button!")
+  myLabel.pack()
+
+# fg = foreground (text) colour, bg = background colour -seems to work once you have clicked it. Also accepts hex colour codes, e.g. #ffffff for white
+
+myButton = Button(root, text="Click Me!", command=myClick, fg="blue", bg="#ffffff")
+myButton.pack()
+
+root.mainloop()
+
+"""
